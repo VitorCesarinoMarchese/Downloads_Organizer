@@ -1,0 +1,60 @@
+{
+  "Images": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".gif",
+    ".webp",
+    ".svg",
+    ".bmp"
+  ],
+  "Documents": [
+    ".pdf",
+    ".docx",
+    ".txt",
+    ".odt",
+    ".rtf",
+    ".pptx",
+    ".odp",
+    ".ppt",
+    ".csv",
+    ".xls",
+    ".xlsx",
+    ".xlsm",
+    ".xlsb",
+    ".ods"
+  ],
+  "Videos": [
+    ".mp4",
+    ".mov",
+    ".avi",
+    ".mkv"
+  ],
+  "Music": [
+    ".mp3",
+    ".wav",
+    ".aac"
+  ],
+  "Archives": [
+    ".zip",
+    ".rar",
+    ".tar",
+    ".gz",
+    ".deb"
+  ],
+  "Scripts": [
+    ".py",
+    ".js",
+    ".sh"
+  ],
+  "Hyper_Text": [
+    ".html",
+    ".css",
+    ".md"
+  ],
+  "Nds": [
+    ".nds",
+    ".sav",
+    ".dsv"
+  ]
+}
