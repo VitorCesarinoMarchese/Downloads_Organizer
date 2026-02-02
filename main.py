@@ -1,9 +1,13 @@
+from pathlib import Path
 import os
 import shutil
 import sys
 import json
 
-with open('config.json', 'r') as f:
+BASE_DIR = Path(__file__).resolve().parent
+CONFIG_PATH = BASE_DIR / "config.json"
+
+with open(CONFIG_PATH, 'r') as f:
     FILE_TYPES = json.load(f)
 
 
