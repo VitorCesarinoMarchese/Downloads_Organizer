@@ -32,11 +32,14 @@
   ],
   "Music": [
     ".mp3",
+    ".midi",
+    ".mid",
     ".wav",
     ".aac"
   ],
   "Archives": [
     ".zip",
+    ".mrpack",
     ".rar",
     ".tar",
     ".gz",
@@ -46,6 +49,9 @@
     ".py",
     ".js",
     ".sh"
+  ],
+  "Bin": [
+    ".jar"
   ],
   "Hyper_Text": [
     ".html",

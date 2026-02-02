@@ -19,14 +19,26 @@ def organize_folder(folder_path):
 
             for folder, extensions in FILE_TYPES.items():
                 if file_extension in extensions:
-                    target_folder = os.path.join(folder_path, folder)
+                    match folder:
+                        case "Images":
+                            target_folder = os.path.expanduser("~/Pictures/")
+                        case "Documents":
+                            target_folder = os.path.expanduser("~/Documents/")
+                        case "Videos":
+                            target_folder = os.path.expanduser("~/obs/")
+                        case _:
+                            target_folder = os.path.join(folder_path, folder)
 
                     if not os.path.exists(target_folder):
                         os.makedirs(target_folder)
 
-                    shutil.move(file_path, os.path.join(
-                        target_folder, filename))
-                    print(f"Moved {filename} -> {folder}/")
+                    try:
+                        shutil.move(file_path,
+                                    target_folder)
+                        print(f"Moved {filename} -> {folder}/")
+                    except Exception as e:
+                        print(f"Error moving {filename}: {e}")
+
                     break
 
 
