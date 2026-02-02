@@ -39,7 +39,7 @@ def organize_folder(folder_path):
                     try:
                         shutil.move(file_path,
                                     target_folder)
-                        print(f"Moved {filename} -> {folder}/")
+                        print(f"Moved {filename} -> {target_folder}/")
                     except Exception as e:
                         print(f"Error moving {filename}: {e}")
 
