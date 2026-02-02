@@ -48,7 +48,7 @@ def organize_folder(folder_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("usage: python main.py <folder_path>")
+        print("usage: {comand} <folder_path>")
     else:
         folder = sys.argv[1]
         organize_folder(folder)
